@@ -21,3 +21,4 @@ The first line contains a, the second line contains b, and the third line contai
 Take input in 3 lines a, b, and m. Just print the `pow(a,b)` / `a**b` in first line and in second line `pow(a,b,m)`.
 
 And all done 👍.
+ 
