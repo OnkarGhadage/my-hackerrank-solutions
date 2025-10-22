@@ -1,0 +1,40 @@
+# Problem statement
+## Task
+Students of District College have a subscription to English and French newspapers. Some students have subscribed to only the English newspaper, some have subscribed to only the French newspaper, and some have subscribed to both newspapers.
+You are given two sets of student roll numbers. One set has subscribed to the English newspaper, and one set has subscribed to the French newspaper. Your task is to find the total number of students who have subscribed to only English newspapers.
+## Input Format
+The first line contains the number of students who have subscribed to the English newspaper.
+The second line contains the space separated list of student roll numbers who have subscribed to the English newspaper.
+The third line contains the number of students who have subscribed to the French newspaper.
+The fourth line contains the space separated list of student roll numbers who have subscribed to the French newspaper.
+## Constraints
+0 < Total number of students in college < 1000
+## Output Format
+Output the total number of students who are subscribed to the English newspaper only.
+## Sample Input
+`9`  
+`1 2 3 4 5 6 7 8 9`  
+`9`  
+`10 1 2 3 11 21 55 6 8`  
+## Sample Output
+`4`  
+## Explanation
+The roll numbers of students who only have English newspaper subscriptions are:
+4, 5, 7 and 9.
+Hence, the total is  students.
+<hr>
+
+# My approach
+Its just another set operation. Set difference. It returns the element from first set which are not present in second set.
+
+Take inputs.  
+In first line a number of students who have subscribed to the English newspaper.  
+In second line the space separated list of student roll numbers who have subscribed to the English newspaper. Convert it into set.  
+In third line a number of students who have subscribed to the French newspaper.  
+In fourth line the space separated list of student roll numbers who have subscribed to the French newspaper. Convert it into set.  
+
+Lastly just print the length of set of set difference of set two sets.
+
+`len(e-f)` OR `len(e.difference(f))`.
+
+And all done 👍.
